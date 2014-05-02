@@ -1,0 +1,220 @@
+{
+    "project": {
+        "name": "dialog",
+        "description": "dialog, alert, confirm, tips",
+        "version": "1.0.0"
+    },
+    "files": {
+        "tmp/dialog/src/alert.js": {
+            "name": "tmp/dialog/src/alert.js",
+            "modules": {
+                "Dialog": 1
+            },
+            "classes": {
+                "Alert": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
+        "tmp/dialog/src/confirm.js": {
+            "name": "tmp/dialog/src/confirm.js",
+            "modules": {},
+            "classes": {
+                "Confirm": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
+        "tmp/dialog/src/dialog.js": {
+            "name": "tmp/dialog/src/dialog.js",
+            "modules": {},
+            "classes": {
+                "Dialog": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
+        "tmp/dialog/src/mask.js": {
+            "name": "tmp/dialog/src/mask.js",
+            "modules": {},
+            "classes": {
+                "Mask": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
+        "tmp/dialog/src/tips.js": {
+            "name": "tmp/dialog/src/tips.js",
+            "modules": {},
+            "classes": {
+                "Tips": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        }
+    },
+    "modules": {
+        "Dialog": {
+            "name": "Dialog",
+            "submodules": {},
+            "classes": {
+                "Alert": 1,
+                "Confirm": 1,
+                "Dialog": 1,
+                "Mask": 1,
+                "Tips": 1
+            },
+            "fors": {},
+            "namespaces": {},
+            "tag": "module",
+            "file": "tmp/dialog/src/tips.js",
+            "line": 13,
+            "description": "对话框"
+        }
+    },
+    "classes": {
+        "Alert": {
+            "name": "Alert",
+            "shortname": "Alert",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "Dialog",
+            "namespace": "",
+            "file": "tmp/dialog/src/alert.js",
+            "line": 13,
+            "description": "Alert",
+            "extends": "Dialog",
+            "is_constructor": 1
+        },
+        "Confirm": {
+            "name": "Confirm",
+            "shortname": "Confirm",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "Dialog",
+            "namespace": "",
+            "file": "tmp/dialog/src/confirm.js",
+            "line": 13,
+            "description": "Confirm",
+            "extends": "Dialog",
+            "is_constructor": 1
+        },
+        "Dialog": {
+            "name": "Dialog",
+            "shortname": "Dialog",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "Dialog",
+            "namespace": "",
+            "file": "tmp/dialog/src/dialog.js",
+            "line": 18,
+            "description": "Dialog",
+            "is_constructor": 1
+        },
+        "Mask": {
+            "name": "Mask",
+            "shortname": "Mask",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "Dialog",
+            "namespace": "",
+            "file": "tmp/dialog/src/mask.js",
+            "line": 14,
+            "description": "遮罩层",
+            "is_constructor": 1
+        },
+        "Tips": {
+            "name": "Tips",
+            "shortname": "Tips",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "Dialog",
+            "namespace": "",
+            "file": "tmp/dialog/src/tips.js",
+            "line": 13,
+            "description": "Tips",
+            "extends": "Dialog",
+            "is_constructor": 1
+        }
+    },
+    "classitems": [
+        {
+            "file": "tmp/dialog/src/dialog.js",
+            "line": 71,
+            "description": "设置zIndex",
+            "itemtype": "method",
+            "name": "setIndex",
+            "params": [
+                {
+                    "name": "index",
+                    "description": "zIndex",
+                    "type": "Number",
+                    "optional": true
+                }
+            ],
+            "class": "Dialog",
+            "module": "Dialog"
+        },
+        {
+            "file": "tmp/dialog/src/dialog.js",
+            "line": 85,
+            "description": "设置焦点",
+            "itemtype": "method",
+            "name": "focus",
+            "class": "Dialog",
+            "module": "Dialog"
+        },
+        {
+            "file": "tmp/dialog/src/dialog.js",
+            "line": 100,
+            "description": "点击关闭按钮",
+            "itemtype": "method",
+            "name": "close",
+            "class": "Dialog",
+            "module": "Dialog"
+        },
+        {
+            "file": "tmp/dialog/src/dialog.js",
+            "line": 111,
+            "description": "显示对话框",
+            "itemtype": "method",
+            "name": "show",
+            "class": "Dialog",
+            "module": "Dialog"
+        },
+        {
+            "file": "tmp/dialog/src/dialog.js",
+            "line": 124,
+            "description": "隐藏对话框",
+            "itemtype": "method",
+            "name": "hide",
+            "class": "Dialog",
+            "module": "Dialog"
+        },
+        {
+            "file": "tmp/dialog/src/dialog.js",
+            "line": 165,
+            "description": "销毁",
+            "itemtype": "method",
+            "name": "destroy",
+            "class": "Dialog",
+            "module": "Dialog"
+        }
+    ],
+    "warnings": []
+}

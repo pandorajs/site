@@ -1,0 +1,15 @@
+<% var yuidoc = get_current_yuidoc(); %>
+<aside id="sidebar">
+  <strong class="sidebar-title">Projects</strong>
+  <a href="<%- config.root %>api/class/classes/class.html" class="sidebar-link<% if (page.yuidoc_name === 'class'){ %> current<% } %>">Class</a>
+  <a href="<%- config.root %>api/events/classes/events.html" class="sidebar-link<% if (page.yuidoc_name === 'events'){ %> current<% } %>">Events</a>
+  <a href="<%- config.root %>api/base/classes/base.html" class="sidebar-link<% if (page.yuidoc_name === 'base'){ %> current<% } %>">Base</a>
+  <a href="<%- config.root %>api/widget/classes/widget.html" class="sidebar-link<% if (page.yuidoc_name === 'widget'){ %> current<% } %>">Widget</a>
+  <a href="<%- config.root %>api/overlay/classes/overlay.html" class="sidebar-link<% if (page.yuidoc_name === 'overlay'){ %> current<% } %>">Overlay</a>
+  <a href="<%- config.root %>api/dialog/classes/dialog.html" class="sidebar-link<% if (page.yuidoc_name === 'dialog'){ %> current<% } %>">Dialog</a>
+  <a href="<%- config.root %>api/validate/classes/validate.html" class="sidebar-link<% if (page.yuidoc_name === 'validate'){ %> current<% } %>">Validate</a>
+  <strong class="sidebar-title">Classes</strong>
+  <% _.each(yuidoc.classes, function(obj){ %>
+    <a href="<%- config.root %><%- obj.path %>" class="sidebar-link<% if (is_current(obj.path)){ %> current<% } %>"><%= obj.name %></a>
+  <% }) %>
+</aside>

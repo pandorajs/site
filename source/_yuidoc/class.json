@@ -1,0 +1,161 @@
+{
+    "project": {
+        "name": "class",
+        "description": "oo class",
+        "version": "1.0.0"
+    },
+    "files": {
+        "tmp/class/src/class.js": {
+            "name": "tmp/class/src/class.js",
+            "modules": {
+                "Class": 1
+            },
+            "classes": {
+                "Class": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        }
+    },
+    "modules": {
+        "Class": {
+            "name": "Class",
+            "submodules": {},
+            "classes": {
+                "Class": 1
+            },
+            "fors": {},
+            "namespaces": {},
+            "tag": "module",
+            "file": "tmp/class/src/class.js",
+            "line": 22,
+            "description": "类"
+        }
+    },
+    "classes": {
+        "Class": {
+            "name": "Class",
+            "shortname": "Class",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "Class",
+            "namespace": "",
+            "file": "tmp/class/src/class.js",
+            "line": 22,
+            "description": "类，简单 OO 实现"
+        }
+    },
+    "classitems": [
+        {
+            "file": "tmp/class/src/class.js",
+            "line": 31,
+            "description": "初始化方法，实例化时自动执行",
+            "itemtype": "method",
+            "name": "initialize",
+            "class": "Class",
+            "module": "Class"
+        },
+        {
+            "file": "tmp/class/src/class.js",
+            "line": 38,
+            "description": "扩展实例方法/属性",
+            "itemtype": "method",
+            "name": "extend",
+            "params": [
+                {
+                    "name": "obj1",
+                    "description": "实例方法集",
+                    "type": "Object"
+                },
+                {
+                    "name": "objN",
+                    "description": "实例方法集",
+                    "type": "Object",
+                    "optional": true
+                }
+            ],
+            "return": {
+                "description": "类实例",
+                "type": "Object"
+            },
+            "example": [
+                "\n```\nvar bob = new Person('Bob', 13);\n\nbob.extend({\n  say: function () {\n    console.log('My name is ' + this.name + '.');\n    console.log('I\\'m ' + this.age + ' years old.');\n  }\n});\n\nbob.say();\n// My name is Bob.\n// I'm 13 years old.\n```"
+            ],
+            "class": "Class",
+            "module": "Class"
+        },
+        {
+            "file": "tmp/class/src/class.js",
+            "line": 70,
+            "description": "创建类",
+            "is_constructor": 1,
+            "itemtype": "method",
+            "name": "create",
+            "static": 1,
+            "params": [
+                {
+                    "name": "Brood",
+                    "description": "将要继承的父类（只继承其原型方法）",
+                    "type": "Function",
+                    "optional": true
+                },
+                {
+                    "name": "Proto",
+                    "description": "将要扩展的实例方法集",
+                    "type": "Object",
+                    "optional": true
+                },
+                {
+                    "name": "ProtoN",
+                    "description": "将要扩展的实例方法集",
+                    "type": "Object",
+                    "optional": true
+                }
+            ],
+            "return": {
+                "description": "类",
+                "type": "Function"
+            },
+            "example": [
+                "\n```\n// 创建 `Person` 类\nvar Person = Class.create({\n  initialize: function (name, age) {\n    this.name = name;\n    this.age = age;\n  }\n});\n\n// 创建 `Student` 类，不推荐采用这种方法;\n// 推荐采用下文的静态方法 `SomeSuperClass.extend`\nvar Student = Class.create(Person, {\n  initialize: function (name, age, school) {\n    // `Student` 的 `superclass` 是 `Person`\n    Student.superclass.initialize.apply(this, arguments);\n    this.school = school;\n  }\n});\n\nvar jack = new Person('Jack', 34);\n// now:\n// jack.name === 'Tom';\n// jack.age === 34;\n// jack.school === undefined;\n\nvar tom = new Student('Tom', 21, 'MIT');\n// now:\n// tom.name === 'Tom';\n// tom.age === 21;\n// tom.school === 'MIT';\n```"
+            ],
+            "class": "Class",
+            "module": "Class"
+        },
+        {
+            "file": "tmp/class/src/class.js",
+            "line": 142,
+            "description": "扩展类",
+            "itemtype": "method",
+            "name": "extend",
+            "static": 1,
+            "params": [
+                {
+                    "name": "Proto",
+                    "description": "将要扩展的实例方法集",
+                    "type": "Object",
+                    "optional": true
+                },
+                {
+                    "name": "ProtoN",
+                    "description": "将要扩展的实例方法集",
+                    "type": "Object",
+                    "optional": true
+                }
+            ],
+            "return": {
+                "description": "类",
+                "type": "Function"
+            },
+            "example": [
+                "\n```\n// 创建 `Student` 类，从 `Persion` 类扩展\nvar Student = Person.extend({\n  initialize: function (name, age, school) {\n    // 调用父类的初始化方法，根据业务自由决定是否需要\n    Student.superclass.initialize.apply(this, arguments);\n    this.school = school;\n  }\n});\n```"
+            ],
+            "class": "Class",
+            "module": "Class"
+        }
+    ],
+    "warnings": []
+}

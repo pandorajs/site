@@ -1,0 +1,114 @@
+{
+    "project": {
+        "name": "overlay",
+        "description": "overlay, provides postioning",
+        "version": "1.0.0"
+    },
+    "files": {
+        "tmp/overlay/src/overlay.js": {
+            "name": "tmp/overlay/src/overlay.js",
+            "modules": {
+                "Overlay": 1
+            },
+            "classes": {
+                "Overlay": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        }
+    },
+    "modules": {
+        "Overlay": {
+            "name": "Overlay",
+            "submodules": {},
+            "classes": {
+                "Overlay": 1
+            },
+            "fors": {},
+            "namespaces": {},
+            "tag": "module",
+            "file": "tmp/overlay/src/overlay.js",
+            "line": 13,
+            "description": "浮动层"
+        }
+    },
+    "classes": {
+        "Overlay": {
+            "name": "Overlay",
+            "shortname": "Overlay",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "Overlay",
+            "namespace": "",
+            "file": "tmp/overlay/src/overlay.js",
+            "line": 13,
+            "description": "Overlay",
+            "is_constructor": 1
+        }
+    },
+    "classitems": [
+        {
+            "file": "tmp/overlay/src/overlay.js",
+            "line": 68,
+            "description": "设定位置（left 与 top）",
+            "itemtype": "method",
+            "name": "setPosition",
+            "class": "Overlay",
+            "module": "Overlay"
+        },
+        {
+            "file": "tmp/overlay/src/overlay.js",
+            "line": 97,
+            "description": "显示对话框",
+            "itemtype": "method",
+            "name": "show",
+            "class": "Overlay",
+            "module": "Overlay"
+        },
+        {
+            "file": "tmp/overlay/src/overlay.js",
+            "line": 105,
+            "description": "通知显示",
+            "itemtype": "event",
+            "name": "show",
+            "params": [
+                {
+                    "name": "e",
+                    "description": "Event.",
+                    "type": "Object"
+                }
+            ],
+            "class": "Overlay",
+            "module": "Overlay"
+        },
+        {
+            "file": "tmp/overlay/src/overlay.js",
+            "line": 116,
+            "description": "隐藏对话框",
+            "itemtype": "method",
+            "name": "hide",
+            "class": "Overlay",
+            "module": "Overlay"
+        },
+        {
+            "file": "tmp/overlay/src/overlay.js",
+            "line": 124,
+            "description": "通知隐藏",
+            "itemtype": "event",
+            "name": "hide",
+            "params": [
+                {
+                    "name": "e",
+                    "description": "Event.",
+                    "type": "Object"
+                }
+            ],
+            "class": "Overlay",
+            "module": "Overlay"
+        }
+    ],
+    "warnings": []
+}

@@ -1,0 +1,21 @@
+<article class="page">
+  <%- partial('_partial/banner', {banner_title: page.title}) %>
+  <div class="outer">
+    <%- partial('_partial/mobile-menu') %>
+    <div class="page-content">
+      <div class="toc-wrap">
+        <strong class="toc-title">Contents</strong>
+        <%- toc(page.content) %>
+      </div>
+      <div class="page-entry">
+        <%- page.content %>
+      </div>
+      <footer id="page-footer">
+        <time id="page-footer-updated" datetime="<%= date_xml(page.updated) %>">Last updated: <%= date(page.updated) %></time>
+        <% if (page.prev){ %><a href="<%- config.root %>docs/<%= page.prev %>.html" id="page-footer-prev" class="page-footer-link">Prev</a><% } %>
+        <% if (page.next){ %><a href="<%- config.root %>docs/<%= page.next %>.html" id="page-footer-next" class="page-footer-link">Next</a><% } %>
+      </footer>
+    </div>
+    <%- partial('_partial/sidebar') %>
+  </div>
+</article>

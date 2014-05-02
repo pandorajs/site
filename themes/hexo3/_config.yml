@@ -1,0 +1,10 @@
+menu:
+  Docs: docs/
+  API: api/class/classes/class.html
+  Github: https://github.com/pandorajs
+
+doc_sidebar:
+  Getting Started:
+    Overview: index.html
+
+google_analytics: UA-50206223-1
