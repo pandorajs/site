@@ -28,7 +28,7 @@
             "namespaces": {},
             "tag": "module",
             "file": "tmp/validate/src/validate.js",
-            "line": 26,
+            "line": 13,
             "description": "Validate库"
         }
     },
@@ -44,7 +44,7 @@
             "module": "Validate",
             "namespace": "",
             "file": "tmp/validate/src/validate.js",
-            "line": 26,
+            "line": 13,
             "description": "Validate\n目前支持单个表单",
             "is_constructor": 1
         }
@@ -52,7 +52,7 @@
     "classitems": [
         {
             "file": "tmp/validate/src/validate.js",
-            "line": 201,
+            "line": 181,
             "description": "校验整个表单",
             "itemtype": "method",
             "name": "validateForm",
@@ -61,7 +61,7 @@
         },
         {
             "file": "tmp/validate/src/validate.js",
-            "line": 219,
+            "line": 207,
             "description": "验证单个元素",
             "params": [
                 {
@@ -77,7 +77,7 @@
         },
         {
             "file": "tmp/validate/src/validate.js",
-            "line": 267,
+            "line": 253,
             "description": "校验是否符合指定规则",
             "itemtype": "method",
             "name": "checkRule",
@@ -97,7 +97,7 @@
         },
         {
             "file": "tmp/validate/src/validate.js",
-            "line": 293,
+            "line": 277,
             "description": "检查校验完成情况",
             "itemtype": "method",
             "name": "checkValidation",
@@ -106,25 +106,7 @@
         },
         {
             "file": "tmp/validate/src/validate.js",
-            "line": 315,
-            "description": "清除错误信息",
-            "itemtype": "method",
-            "name": "clearErrors",
-            "class": "Validate",
-            "module": "Validate"
-        },
-        {
-            "file": "tmp/validate/src/validate.js",
-            "line": 330,
-            "description": "使第一个校验失败的元素获得焦点",
-            "itemtype": "method",
-            "name": "focusError",
-            "class": "Validate",
-            "module": "Validate"
-        },
-        {
-            "file": "tmp/validate/src/validate.js",
-            "line": 339,
+            "line": 294,
             "description": "显示错误信息\n如果需要自定义错误显示方式，则在实例里修改此方法。（不要修改原型）",
             "itemtype": "method",
             "name": "addError",
@@ -146,7 +128,7 @@
         },
         {
             "file": "tmp/validate/src/validate.js",
-            "line": 354,
+            "line": 309,
             "description": "获取错误提示信息",
             "params": [
                 {
@@ -172,7 +154,7 @@
         },
         {
             "file": "tmp/validate/src/validate.js",
-            "line": 369,
+            "line": 323,
             "description": "移除错误信息",
             "itemtype": "method",
             "name": "removeError",

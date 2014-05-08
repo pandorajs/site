@@ -21,7 +21,7 @@ layout: api/layout
     <%- partial('_partial/classitem', {data: page, type: 'constructor'}) %>
   <% } %>
   <% if (page.methods.length){ %>
-    <h2 class="api-section-title">Methods</h2>
+    <h2 class="api-sectionins-title">Methods</h2>
     <% page.methods.forEach(function(item){ %>
       <%- partial('_partial/classitem', {data: item, type: 'method'}) %>
     <% }) %>

@@ -27,6 +27,10 @@
   <%- partial('deprecated', {data: data}) %>
   <div class="api-item-entry">
     <%- data.description %>
+    <% if (data.example){ %>
+      <h4 class="api-item-subtitle">Example</h4>
+      <pre><%= data.example %></pre>
+    <% } %>
     <% if (data.params && data.params.length){ %>
       <h4 class="api-item-subtitle">Parameters</h4>
       <ul>

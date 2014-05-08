@@ -70,9 +70,12 @@
             "namespace": "",
             "file": "tmp/base/src/base.js",
             "line": 17,
-            "description": "基类\n\n扩展 Events 与 Aspect (AOP)",
+            "description": "基类\n\n实现 事件订阅 与 Aspect (AOP)",
             "is_constructor": 1,
-            "implements": "Aspect"
+            "implements": "Aspect",
+            "example": [
+                "\n```\n// 创建子类\nvar SomeBase = Base.extend({\n  someMethod: function () {\n    this.fire('someEvent');\n  }\n});\n// 实例化\nvar someBase = new SomeBase({\n  events: {\n    someEvent: function () {\n      console.log('someEvent fired');\n    }\n  }\n});\n// 调用方法\nsomeBase.someMethod();\n// 控制台将输出：\n// someEvent fired\n```"
+            ]
         }
     },
     "classitems": [
@@ -128,8 +131,8 @@
         },
         {
             "file": "tmp/base/src/base.js",
-            "line": 29,
-            "description": "初始化函数，将自动执行；实现事件自动订阅与初始化参数",
+            "line": 51,
+            "description": "初始化函数，将自动执行；执行参数初始化与订阅事件初始化",
             "itemtype": "method",
             "name": "initialize",
             "params": [
@@ -144,7 +147,7 @@
         },
         {
             "file": "tmp/base/src/base.js",
-            "line": 43,
+            "line": 65,
             "description": "默认参数，子类自动继承并覆盖",
             "itemtype": "property",
             "name": "defaults",
@@ -154,7 +157,7 @@
         },
         {
             "file": "tmp/base/src/base.js",
-            "line": 51,
+            "line": 73,
             "description": "存取状态",
             "itemtype": "method",
             "name": "state",
@@ -175,8 +178,8 @@
         },
         {
             "file": "tmp/base/src/base.js",
-            "line": 67,
-            "description": "获取初始化后的数据/参数，支持多级获取，如：this.option('rules/remote')",
+            "line": 89,
+            "description": "存取初始化后的数据/参数，支持多级存取，\n如：this.option('rules/remote') 对应于 { rules: { remote: ... } }",
             "itemtype": "method",
             "name": "option",
             "params": [
@@ -208,14 +211,14 @@
         },
         {
             "file": "tmp/base/src/base.js",
-            "line": 133,
+            "line": 156,
             "description": "事件订阅，以及AOP",
             "itemtype": "method",
             "name": "initEvents",
             "params": [
                 {
                     "name": "events",
-                    "description": "订阅事件列表",
+                    "description": "事件订阅列表",
                     "type": "Object|Function",
                     "optional": true
                 }
@@ -229,8 +232,8 @@
         },
         {
             "file": "tmp/base/src/base.js",
-            "line": 172,
-            "description": "销毁当前组件对象",
+            "line": 195,
+            "description": "销毁当前组件实例",
             "itemtype": "method",
             "name": "destroy",
             "class": "Base",

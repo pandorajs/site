@@ -1,7 +1,16 @@
 module.exports = function(grunt){
-  
+
   var allOpts = (function() {
-    var mods = ['class', 'events', 'base', 'widget', 'overlay', 'dialog','select','validate'];
+    var mods = [
+        'class',
+        'events',
+        'base',
+        'widget',
+        'overlay',
+        'dialog',
+        // 'select',
+        'validate'
+      ];
     var gitclone = {};
     var pkgs = {options: {}};
     var yuidoc = {};
@@ -31,7 +40,7 @@ module.exports = function(grunt){
       copy[mod] = {
         src: 'tmp/' + mod + '-out/data.json',
         dest: 'source/_yuidoc/' + mod + '.json'
-      }
+      };
 
     });
 
@@ -58,6 +67,8 @@ module.exports = function(grunt){
   require('load-grunt-tasks')(grunt);
 
   grunt.loadTasks('tasks');
+
+  grunt.registerTask('local', ['gitclone', 'read_pkg', 'yuidoc', 'copy']);
 
   grunt.registerTask('default', ['gitclone', 'read_pkg', 'yuidoc', 'copy', 'clean:tmp']);
 };

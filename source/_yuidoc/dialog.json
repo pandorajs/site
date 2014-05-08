@@ -155,7 +155,7 @@
     "classitems": [
         {
             "file": "tmp/dialog/src/dialog.js",
-            "line": 71,
+            "line": 76,
             "description": "设置zIndex",
             "itemtype": "method",
             "name": "setIndex",
@@ -172,7 +172,7 @@
         },
         {
             "file": "tmp/dialog/src/dialog.js",
-            "line": 85,
+            "line": 90,
             "description": "设置焦点",
             "itemtype": "method",
             "name": "focus",
@@ -181,7 +181,7 @@
         },
         {
             "file": "tmp/dialog/src/dialog.js",
-            "line": 100,
+            "line": 105,
             "description": "点击关闭按钮",
             "itemtype": "method",
             "name": "close",
@@ -190,7 +190,7 @@
         },
         {
             "file": "tmp/dialog/src/dialog.js",
-            "line": 111,
+            "line": 116,
             "description": "显示对话框",
             "itemtype": "method",
             "name": "show",
@@ -199,7 +199,7 @@
         },
         {
             "file": "tmp/dialog/src/dialog.js",
-            "line": 124,
+            "line": 129,
             "description": "隐藏对话框",
             "itemtype": "method",
             "name": "hide",
@@ -208,7 +208,7 @@
         },
         {
             "file": "tmp/dialog/src/dialog.js",
-            "line": 165,
+            "line": 170,
             "description": "销毁",
             "itemtype": "method",
             "name": "destroy",
