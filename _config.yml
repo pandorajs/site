@@ -1,67 +1,24 @@
-# Basic
-title: PandoraJS
-subtitle: 17173 PandoraJS
-description:
-url: pandorajs.github.io
+title: Pandora
+subtitle: "pandora 组件"
+description: "pandora 组件"
 author: lynzz
-email: lynzz168@gmail.com
-language:
-
-# Permalink
+timezone: UTC
+language: zh-cn
+url: https://pandorajs.github.io
 root: /
-permalink: :category/:title/
-tag_dir: tags
-archive_dir: archives
-category_dir: posts
-
-# Archives
-# 2: Paginate result
-# 1: Display result in same page
-archive: 2
-category: 2
-tag: 2
-
-# Server
-# Hexo uses Connect to serve static files
-# Reference: http://www.senchalabs.org/connect/
-port: 5000
-logger: false
-logger_format:
-
-# Date / Time format
-# Hexo uses Moment.js to parse and display date
-# Reference: http://momentjs.com/docs/#/displaying/format/
-date_format: MMM D, YYYY
-time_format: H:mm:ss
-
-# Pagination
-per_page: 0
-pagination_dir: page
-
-# Disqus
-disqus_shortname:
-
-# Extensions
-plugins:
-theme: hexo3
-exclude_generator:
-- category
-- tag
-- home
-- post
-- archive
-
-# Enhancement
-auto_spacing: false
-titlecase: false
+permalink: blog/:year/:month/:day/:title/
+archive_dir: blog
+code_dir: downloads/code
+new_post_name: :year-:month-:day-:title.md # File name of new posts
+post_asset_folder: true
 highlight:
   enable: true
   line_number: false
-  tab_replace: '  '
+per_page: 0
 
-# Deployment
-# Type: github, heroku
-# Read documentaion for more information
+theme: navy
 deploy:
-  type: github
-  repo: https://github.com/pandorajs/pandorajs.github.io.git
+  type: git
+  repo: git@github.com:pandorajs/pandorajs.github.io.git
+
+github: lynzz

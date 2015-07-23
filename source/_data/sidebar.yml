@@ -1,0 +1,11 @@
+docs:
+  getting_started:
+    about: index.html
+    configuration: configuration.html
+    started: started.html
+    setup: setup.html
+  other:
+    spm2a3: spm2a3.html  
+    spm2to3: spm2to3.html
+    spm3: spm3.html
+

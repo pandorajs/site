@@ -1,17 +1,77 @@
 layout: index
+description: Hexo is a fast, simple & powerful blog framework powered by Node.js.
+subtitle: pandora 组件库
+comments: false
 ---
 
-.intro-wrap
-  .outer
-    h2.intro-title Features
-  .outer
+- var spmDocs = 'http://10.5.121.139:3001/docs'
+h2.intro-title Pandora 
+  span 基础设施  
+ul.intro-feature-list
+  li.intro-feature-wrap
     .intro-feature
-      h3.intro-feature-title Blazing Fast
-      p.intro-feature-desc TODO.
+      h3.intro-feature-title 
+        a(href="#{spmDocs}/pandora-class/latest/") Class
+          small 1.1.0
+      p.intro-feature-desc 提供简洁的 OO 实现
+  li.intro-feature-wrap
     .intro-feature
-      h3.intro-feature-title Easy Write
-      p.intro-feature-desc TODO.
+      h3.intro-feature-title
+        a(href="#{spmDocs}/pandora-events/latest/") Events
+          small 1.1.0
+      p.intro-feature-desc 实现了事件订阅与发布
+  li.intro-feature-wrap
     .intro-feature
-      h3.intro-feature-title Extensibility
-      p.intro-feature-desc TODO.
+      h3.intro-feature-title
+        a(href="#{spmDocs}/pandora-base/latest/") Base
+          small 1.1.0
+      p.intro-feature-desc 一个基础类，提供 Class、Events 和 Aspect 支持
+  li.intro-feature-wrap
+    .intro-feature
+      h3.intro-feature-title 
+        a(href="#{spmDocs}/pandora-widget/latest/") Widget
+          small 1.1.0
+      p.intro-feature-desc UI 组件的基础类，约定了组件的基本生命周期，实现了一些通用功能
 
+h2.intro-title Pandora  
+  span 工具
+
+
+h2.intro-title Pandora 
+  span UI 组件  
+ul.intro-feature-list
+  li.intro-feature-wrap
+    .intro-feature
+      h3.intro-feature-title 
+        a(href="#{spmDocs}/pandora-dialog/latest/") Dialog
+          small 1.1.0
+      p.intro-feature-desc Dialog 是通用对话框容器，提供显隐关闭、遮罩层、内容区域自定义以及模态对话框等功能。
+      
+  li.intro-feature-wrap
+    .intro-feature
+      h3.intro-feature-title
+        a(href="#{spmDocs}/pandora-select/latest/") Select
+          small 1.1.0
+      p.intro-feature-desc 自定义 select 选择框
+
+  li.intro-feature-wrap
+    .intro-feature
+      h3.intro-feature-title
+        a(href="#{spmDocs}/pandora-switchable/latest/") Switchable
+          small 1.1.0
+      p.intro-feature-desc Switchable提供了切换的基本操作, 并通过参数配置实现了自动播放, 循环, 切换等操作, 并提供不同的特点封装成了Tabs, Slide, Carousel模块. 用户可以根据自己的需求引用不同的模块.    
+  
+  li.intro-feature-wrap
+    .intro-feature
+      h3.intro-feature-title
+        a(href="#{spmDocs}/pandora-gallery/latest/") gallery
+          small 1.1.0
+      p.intro-feature-desc 组图组件
+
+
+  li.intro-feature-wrap
+    .intro-feature
+      h3.intro-feature-title
+        a(href="#{spmDocs}/pandora-validate/latest/") validate
+          small 1.1.0
+      p.intro-feature-desc 表单验证组件

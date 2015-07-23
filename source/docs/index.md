@@ -1,6 +1,4 @@
-title: Documentation
+title: 关于 Pandora
 ---
 
-//TODO
-
-
+待补充
