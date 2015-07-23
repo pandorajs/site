@@ -21,4 +21,5 @@ deploy:
   type: git
   repo: git@github.com:pandorajs/pandorajs.github.io.git
 
+duoshuo_shortname: pandorajs
 github: lynzz

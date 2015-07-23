@@ -191,6 +191,6 @@ $ spm publish
 $ spm doc publish
 ```
 
-最新版文档的 url 是 http://10.5.121.139:3001/docs/&#123;&#123;name&#125;&#125;/latest ，也可以通过 http://10.5.121.139:3001/docs/&#123;&#123;name&#125;&#125;/&#123;&#123;version&#125;&#125;/ 访问到所有版本。
+最新版文档的 url 是 http://10.5.121.139:3001/docs/&lt;name&gt;/latest ，也可以通过 http://10.5.121.139:3001/docs/&lt;name&gt;/&lt;version&gt;/ 访问到所有版本。
 
 比如：http://10.5.121.139:3001/docs/now/latest 。
